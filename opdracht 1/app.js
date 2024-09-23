@@ -15,7 +15,11 @@ gsap.from(".image-container img", {
 // Flashing animation for the first image
 gsap.to(".image-container img:nth-child(1)", {
     duration: 0.5,
+<<<<<<< Updated upstream
     opacity: 0,
+=======
+    opacity: 1,
+>>>>>>> Stashed changes
     repeat: -1,
     yoyo: true,
     ease: "power1.inOut"
@@ -23,10 +27,17 @@ gsap.to(".image-container img:nth-child(1)", {
 
 // Flashing animation for the second image with a different pattern
 gsap.to(".image-container img:nth-child(2)", {
+<<<<<<< Updated upstream
     duration: 0.001,
     opacity: 10,
     repeat: -1,
     scale: 3,
+=======
+    duration: 0.01,
+    opacity: 10,
+    repeat: -1,
+    scale: 4,
+>>>>>>> Stashed changes
     yoyo: true,
     ease: "power2.inOut",
     delay: 0.2 // Delay to make the flash pattern different
