@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezondheidsapp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gezondheidsapp</h1>
+    </header>
+
+    <!-- Calorie Tracker Section -->
+    <section id="calorie-tracker">
+        <h2>Calorie Tracker</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="calorie-progress-bar"></div>
+        </div>
+        <div class="meal-input">
+            <input type="number" id="calorie-input" placeholder="Calorieën toevoegen">
+            <button id="add-meal-btn">Voeg maaltijd toe</button>
+        </div>
+        <ul id="meal-list"></ul>
+    </section>
+
+    <!-- Stappenteller Section -->
+    <section id="step-counter">
+        <h2>Stappenteller</h2>
+        <div class="steps-display">0 stappen</div>
+        <div class="steps-visual"></div>
+    </section>
+
+    <!-- Gewichttracker Section -->
+    <section id="weight-tracker">
+        <h2>Gewicht Tracker</h2>
+        <canvas id="weightChart"></canvas>
+    </section>
+
+    <!-- Gezondheidstips Section -->
+    <section id="health-tips">
+        <h2>Gezondheidstips</h2>
+        <div id="tip">Drink genoeg water!</div>
+        <button id="randomTipBtn">Nieuwe Tip</button>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
